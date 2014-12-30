@@ -1,6 +1,6 @@
 # Astro-Nought [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Lycanstrife/astro-nought/blob/master/LICENSE/)
 
-Astro-Nought is a modern take on the old 'Choose-you-own-adventure' story books. As a website, it aims to breathe new life into the ageing genre and take advantage of the latest web technologies. You can view the website as it currently stands at <http://astro-nought.com/> and follow its progress on this repo.
+Astro-Nought is a modern take on the old 'Choose-your-own-adventure' story books. As a website, it aims to breathe new life into the ageing genre and take advantage of the latest web technologies. You can view the website as it currently stands at <http://astro-nought.com/> and follow its progress on this repo.
 
 ![](images/concepts.jpg?raw=true)
 
@@ -8,4 +8,4 @@ The project has existed in one form or another since 2011, but it's taken me yea
 
 ![](images/script.jpg?raw=true)
 
-I own the domain, astro-nought.com, and have been working on a myriad of concepts and ideas in my spare time over the last few years in preparation. Now that I'm comfortable in my coding ability, it's time to take my designs and mock-ups and actually build the working site.
+I now own the domain, astro-nought.com, and have been working on a myriad of concepts and ideas in my spare time over the last few years in preparation. Now that I'm comfortable in my coding ability, it's time to take my designs and mock-ups and actually build the working site.
