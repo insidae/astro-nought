@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>WordPress &rsaquo; Multiple Blogs</title>
+	<link rel="stylesheet" href="wp-admin/css/install.css" type="text/css" />
+</head>
+<body>
+<h1 id="logo" style="text-align: center">
+	<img alt="WordPress" src="../wp-admin/images/wordpress-logo.png" />
+	<br /> Version v4.0
+</h1>
+<p style="text-align: center">How to have Multiple Blogs on this Installation</p>
+
+<h1>First Things First</h1>
+<p>Welcome. WordPress is a very special project to me. Every developer and contributor adds something unique to the mix, and together we create something beautiful that I'm proud to be a part of. Thousands of hours have gone into WordPress, and we're dedicated to making it better every day. Thank you for making it part of your world.</p>
+<p style="text-align: right;">&#8212; Matt Mullenweg</p>
+<h2>Initiating Multi Blogs in Wordpress. <br /> 
+<div style="color: #ff0000;">
+This will NOT work unless you have installed in the root directory of your
+site.
+</div>
+</h2>
+
+<p>Follow these steps</p>
+<ol>
+    <li>If you did not choose the Multiple option at installation 
+    <ul>
+        <li>Logout</li>
+        <li>Edit the file wp-config.php and change the line<br />
+        define('WP_ALLOW_MULTISITE', false);<br />
+        to<br />
+        define('WP_ALLOW_MULTISITE', true);</li>
+    </ul>
+    </li>
+    <li>Login as the administrator.
+
+    <li>(Strongly recommended step) Dashboard -> Settings -> General -
+    <ul>
+        <li>Change 'http://www.<i>astro-nought.com</i>' to 'http://<i>astro-nought.com</i>' for Wordpress
+            address (URL) and Site address (URL). I.E. remove 'www.' from each. </li>
+        <li>Tick 'Anyone can register'</li>
+        <li>Click 'Save Changes'</li>
+        <li>Login again - if you have difficulty just clear cookies.</li>
+    </ul>
+    </li>
+
+<li>Tools -> Network
+    <ul>
+        <li>The apache mod_rewrite module has been installed. You need take no action.</li>
+        <li>Addresses of Sites in your Network - choose Sub-domains (recommended).</li>
+        <li>Click 'Install'</li>
+        <li>New  screen - ignore the warning - your DNS already has a * hostname record.</li>
+        <li>The blogs.dir directory has already been created for you; skip this step</li>
+        <li>Edit wp-config.php and paste in the code as per screen instructions.</li>
+        <li>Remember to reset the permissions on file wp-config.php to 0600.</li>
+        <li>Edit .htaccess and paste in the code as per screen instructions.</li>
+        <li>Click 'Log in' at bottom of page</li>
+    </ul>
+    </li>
+</ol>
+<p>
+Hover on <strong>My Sites</strong> (left end of top navigation bar).  The drop down will 
+contain <strong>&quot;| Network Admin |&quot;</strong>, and a list of sites<br />
+Click on Network Admin to go to Network admin where you can add users and blogs (a.k.a sites).<br />
+Click on a site to go to Site admin from which you can get a dashboard for a particular site.<br />
+</p>
+
+
+<h1>Copyright</h1>
+<p>WordPress is released under the <abbr title="GNU Public License">GPL</abbr> (see <a href="license.txt">license.txt</a>).</p>
+
+</body>
+</html>

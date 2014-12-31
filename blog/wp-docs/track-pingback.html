@@ -1,0 +1,330 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.4  (Linux)">
+	<META NAME="AUTHOR" CONTENT="chris4">
+	<META NAME="CREATED" CONTENT="20090129;12543700">
+	<META NAME="CHANGEDBY" CONTENT="chris4">
+	<META NAME="CHANGED" CONTENT="20090204;11503200">
+	<META NAME="CHANGEDBY" CONTENT="chris4">
+	<META NAME="CHANGEDBY" CONTENT="chris4">
+	<META NAME="CHANGEDBY" CONTENT="chris4">
+	<META NAME="CHANGEDBY" CONTENT="chris4">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		H1 { margin-bottom: 0.2cm }
+		H1.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		H1.cjk { font-family: "DejaVu Sans"; font-size: 16pt }
+		H1.ctl { font-family: "DejaVu Sans"; font-size: 16pt }
+		P { margin-bottom: 0.2cm }
+		H2 { margin-bottom: 0.2cm }
+		H2.western { font-family: "Liberation Sans", sans-serif; font-size: 14pt; font-style: italic }
+		H2.cjk { font-size: 14pt; font-style: italic }
+		H2.ctl { font-size: 14pt; font-style: italic }
+		H3 { margin-bottom: 0.2cm }
+		H3.western { font-family: "Liberation Sans", sans-serif }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<H1 CLASS="western">Trackback and Pingback – Howto</H1>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western">What they do – an example.</H2>
+<P STYLE="margin-bottom: 0cm"><BR>
+[Note:  throughout this document  <strong>Blog-A</strong> is the remote blog, and
+<strong>Blog-B</strong>  is your current blog.]
+</P>
+<P STYLE="margin-bottom: 0cm">Suppose you read a post on someone
+else's blog, Blog-A say, and you think there is relevant content
+(posts and comments) on your site, Blog-B.</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">It would be helpful if readers of
+Blog-A could see the post and comments on your site Blog-B. That may
+be possible by using pingbacks or trackbacks.
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">Both, if moderated, add a  comment to the remote blog.
+<ul>
+    <li> <strong>Pingbacks</strong> are automatic if the post contains the the post
+    (permalink) link of the remote post. Both sites  are recent Wordpress sites.
+    <li> <strong>Trackbacks</strong>  require and contain  a specific  trackback URL (not the permalink
+or post URL)  from the  remote  site.   The remote site will not be a recent
+Wordpress site.
+</ul>
+<p>
+This is explained  in detail  at <a href
+    ='http://dailypost.wordpress.com/2013/04/25/trackbacks-and-pingbacks/'>http://dailypost.wordpress.com/2013/04/25/trackbacks-and-pingbacks/</a>
+</p>
+
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western">Is it possible?</H2>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">It will be possible if 
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0cm">The administrators of both sites
+	have enabled track-pingbacks </P>
+</UL>
+<H2 CLASS="western">Here is how it is done:</H2>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<UL>
+  <LI>
+  <h4>Administrator pre-actions
+</h4>
+  <table>
+<tr>
+  <td>Dashboard -&gt; Settings -&gt; Discussion 
+</td>
+  <td align='center'>Check the boxes&nbsp;
+</td>
+  <td>
+<i>
+&quot;Attempt to notify any blogs linked to from the article (slows down posting.) 
+  </i>&quot;
+</td>
+  </tr>
+<tr>
+  <td>&nbsp;
+</td>
+  <td>&nbsp;
+</td>
+  <td>
+<i>
+&quot;Allow link notifications from other blogs (pingbacks and trackbacks.) 
+  &quot;</i>
+</td>
+  </tr>
+<tr>
+  <td>&nbsp;
+</td>
+  <td>&nbsp;
+</td>
+  <td>
+<i>
+&quot;Allow people to post comments on new articles 
+  &quot;</i>
+</td>
+  </tr>
+<tr>
+  <td>&nbsp;
+</td>
+  <td>
+  <strong>Save changes
+  </strong>
+</td>
+  <td>&nbsp;
+</td>
+  </tr>
+<tr>
+  <td>Dashboard -&gt; Settings -&gt; Permalinks
+</td>
+  <td>&nbsp;
+</td>
+  <td>Check any Common Setting except Default&nbsp;
+</td>
+<tr>
+  <td>&nbsp;
+</td>
+  <td>
+  <strong>Save changes
+  </strong>
+</td>
+  <td>&nbsp;
+</td>
+  </tr>
+<tr>
+    <td>Extend Control Panel -&gt; Scheduled Tasks </td>
+</td>
+  <td>&nbsp;
+</td>
+    <td>Enter  <strong> /usr/bin/php5 /websites/123reg/LinuxPackage22/as/tr/o_/astro-nought.com/public_html/blog/wp-cron.php</strong>  in the box(es)
+   </td>
+</tr>
+<tr>
+  <td>&nbsp;
+</td>
+  <td>
+  <strong>Update
+  </strong>
+</td>
+</table>
+</LI>
+  <LI>
+  <P STYLE="margin-bottom: 0cm">
+  <strong>Visit  remote Blog-A</strong>, read the relevant post, and find the
+  permalink (Wordpress site) or trackback URL (non-Wordpress sie). 
+Copy the link to your clipboard. The link may be something like :-
+</P>
+<P STYLE="margin-bottom: 0cm">
+<ul>
+  <li>'http://www.someone_elses_domain.co.uk/blog//2014/02/sample-post/' - the form
+  should not be the default permamlink for Wordpress (see above - the default form
+  will  give a link to  the remote post  but will not auto generate pingbacks )
+</li>
+</ul>
+</P>
+<P STYLE="margin-bottom: 0cm">
+  <table>
+<tr>
+  <td>Tip:</td>
+  <td>&nbsp;</td>
+  </tr>
+<tr>
+  <td>&nbsp;</td>
+  <td>If remote Blog-A  is a Wordpress blog, you will find the permalink in the address bar of the browser when you are
+      looking at the post on Blog-A.
+      <p> Else the trackback URL should be  displayed with the post. 
+  </td>
+  </tr>
+</table>
+</LI>
+  <LI>
+  <P STYLE="margin-bottom: 0cm">
+  <strong>Visit your own site, Blog-B,</strong> and edit the post you wish to have accessible from Blog-A,
+pasting the URL of Blog-A into your post  on Blog-B.
+<br />
+<P STYLE="margin-bottom: 0cm">
+  <table bgcolor="#ff6666"> 
+<tr>
+  <td>
+  <strong>Important.  </strong>
+</td>
+<td>
+When editing your post choose the<strong>Text </strong> tab at the top of the edit box, <strong>else</strong>
+ the link will be become 'text' and will <strong>not</strong> work as a link.
+</P>
+  </td>
+  </tr>
+</table>
+</p>
+You should
+have the link from the previous step (Blog-A's permalink or trackback URL) in the
+  actual text of your blog, e.g.
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm">
+Click &lt;a
+href=”http://www.someone_elses_domain.co.uk/blog/?p=123”&gt;here&lt;/a&gt;
+  to link to Blog-A.
+</P>
+    </p>
+</LI>
+  <LI>
+  <P STYLE="margin-bottom: 0cm">
+  <strong>Update the post.
+  </strong>
+</P>
+</UL>
+  <P STYLE="margin-bottom: 0cm">
+<br />
+</P>
+<P STYLE="margin-bottom: 0cm">
+There will be a delay before the link to the post on your blog
+(Blog-B) appears on the other blog (Blog-A). 
+
+When a cron job
+<br><strong>/usr/bin/php5 /websites/123reg/LinuxPackage22/as/tr/o_/astro-nought.com/public_html/blog/wp-cron.php</strong> is run on your website, the administrator of  Blog-A  will be sent a request to moderate
+your  track-pingback.
+<p>If he  chooses to approve it the title, excerpt (if any), and a link to
+your post will appear as a comment  to  the relevant post on Blog-A.  It will not
+appear until the  administrator of  Blog-A has  approved it.
+</P>
+  <P STYLE="margin-bottom: 0cm">
+<br />
+</P>
+  <H2 CLASS="western">What can go wrong
+</H2>
+  <H3 CLASS="western">
+  <FONT SIZE=3>You are flooded  with  requests for moderating track-pingbacks
+  </FONT>
+</H3>
+  <p> Track-pingbacks require manual moderation and thus increase the administrator's work load. 
+Unfortunately  most (possibly 90% or more)  track-pingback links are spam  from sites  wishing for hits and are unrelated to the subject matter  of your post,
+but  you have to check each one 
+before approving or trashing it.  Not everyone thinks track-pingbacks are a good idea.  
+<p>
+  <H3 CLASS="western">
+  <FONT SIZE=3>If you  do not want track-pingbacks
+  </FONT>
+</H3>
+<ol>
+    <li> Uncheck the three items above in Dashboard -&gt; Settings -&gt; Discussion
+    <li> Stop the cron job(s) <strong>/usr/bin/php5 /websites/123reg/LinuxPackage22/as/tr/o_/astro-nought.com/public_html/blog/wp-cron.php</strong>.
+</ol>
+  <H3 CLASS="western">
+  <FONT SIZE=3>No output on remote site
+  </FONT>
+</H3>
+<UL>
+  <LI>
+  <P>
+<FONT SIZE=3>
+The remote administrator has not changed his permalink format from the default ( see
+above -   your links will work ok but will not auto generate  pingbacks).</FONT>
+</P>
+  <LI>
+  <P>
+<FONT SIZE=3>
+The remote administrator has not configured his
+site correctly – the correct permissions and correct use of
+  caching are important.</FONT>
+</P>
+  <LI>
+  <P>
+<FONT SIZE=3>
+You have not used the correct link for the
+  track-pingback. 
+<br />
+</P>
+  <LI>
+  <P>
+<FONT SIZE=3>
+The remote administrator has not enabled
+  track-pingbacks on that post.</FONT>
+</P>
+  <LI>
+  <P>
+  <FONT SIZE=3>The comment is waiting for moderation.
+  </FONT>
+</P>
+  <LI>
+  <P>
+  <FONT SIZE=3>A spam catcher has discarded it. 
+</FONT>
+</P>
+</UL>
+  <H2 CLASS="western">
+  <FONT SIZE=3>Bootnote
+  </FONT>
+</H2>
+  <P>
+<FONT SIZE=3>
+If you get a spam problem (with or without
+  track-pingback) try using </FONT>
+  <A HREF="http://www.akismet.com/">akismet
+</A>
+.
+The akismet module is already installed. You just need to enable and
+  configure it.
+</P>
+  <P>
+  <FONT SIZE=3>For further help on track-pingback see 
+<A HREF="http://www.optiniche.com/blog/117/wordpress-trackback-tutorial/">
+WordPress
+  Trackback Tutorial - by Teli Adlam</A>
+  </FONT>
+</P>
+  <P>
+  <br />
+<br />
+</P>
+</BODY>
+</HTML>
