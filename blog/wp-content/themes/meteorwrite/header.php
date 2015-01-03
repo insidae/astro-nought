@@ -31,6 +31,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div class="meteor-texture"></div>
 <div id="page" class="hfeed site">
 	<?php if ( get_header_image() ) : ?>
 	<div id="site-header">
@@ -42,9 +43,26 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="header-main">
+
+		    <!--Meteor-Styling-->
+
+		    <div class="meteor-header">
+		        <h1 class="meteor-title">
+		            <a href="http://www.astro-nought.com/blog/" rel="home">METEOR-WRITE</a>
+		        </h1>
+		        <h1 class="meteor-edition">
+		            2015 Edition
+		        </h1>
+		        <h1 class="meteor-tagline">
+		            The <a href="http://www.astro-nought.com/" target="blank">Astro-Nought</a> Development Blog
+		        </h1>
+		    </div>
+
+		    <!--End of Meteor-Styling-->
+
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
-			<div class="search-toggle">
+			<!--<div class="search-toggle">
 				<a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'twentyfourteen' ); ?></a>
 			</div>
 
@@ -52,7 +70,7 @@
 				<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
 				<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'twentyfourteen' ); ?></a>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-			</nav>
+			</nav>-->
 		</div>
 
 		<div id="search-container" class="search-box-wrapper hide">
